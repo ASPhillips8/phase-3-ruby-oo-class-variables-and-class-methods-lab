@@ -1,3 +1,5 @@
+require "pry"
+
 class Song
   attr_accessor :name, :artist, :genre
 
@@ -26,4 +28,17 @@ class Song
     @@artists.uniq
   end
 
+  def self.genre_count
+    @@genres.tally
+  end
+
+  def self.artist_count
+    @@artists.tally
+  end
+
 end
+
+newYork1 = Song.new("IN new York", "Jay-Z", "rap")
+newYork2 = Song.new("concrete jungle", "Alicia Keys", "rap")
+
+# binding.pry

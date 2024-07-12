@@ -1,5 +1,3 @@
-require "pry"
-
 class Song
   attr_accessor :name, :artist, :genre
 
@@ -37,8 +35,3 @@ class Song
   end
 
 end
-
-newYork1 = Song.new("IN new York", "Jay-Z", "rap")
-newYork2 = Song.new("concrete jungle", "Alicia Keys", "rap")
-
-# binding.pry
